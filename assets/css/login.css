@@ -1,0 +1,35 @@
+#mpf-header-box {
+	padding: 3rem 2rem;
+	width: 100%;
+	background-color: black;
+	color: white !important;
+}
+
+h3 {
+	color: white;
+}
+h4 {
+	color: dodgerblue;
+}
+
+.login h1 a {
+  background-image: url('http://htmlfivedev.com/wp-content/uploads/2018/04/logo-round.png');
+}
+
+#loginform {
+	background-color: black;
+	color: white;
+}
+
+body {
+	background-color: gray;
+	/* color: white; */
+}
+
+#backtoblog a {
+	color: white;
+}
+
+#nav a {
+	color:  white;
+}

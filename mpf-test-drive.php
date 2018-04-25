@@ -21,14 +21,24 @@ if ( ! defined( 'WPINC' ) ) {
 // die;
 
 require_once( plugin_dir_path( __FILE__ ) . 'class-mpf-test-drive.php' );
+require_once( plugin_dir_path( __FILE__ ) . 'class-mpf-filter-test.php' );
+require_once( plugin_dir_path( __FILE__ ) . 'class-mpf-content-widget.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'class-enqueue.php' );
 
 function moose_post_notice_start() {
 
+	remove_filter( 'excerpt_more', 'twentysixteen_excerpt_more', 10 );
+
+
 	$set_scripts = new Enqueue();
 	$set_scripts->initialize();
 
-	$mpf_test = new MPFTest();
+	$mpf_hook_test = new MPFTest();
+
+	$mpf_filter_test = new MPFFilterTest();
+
+	$mpf_content_widget = new MPFContentWidget();
+	$mpf_content_widget->setup_widget();
 
 }
 

@@ -1,12 +1,22 @@
 jQuery(document).ready(function($) {
 
-  var adminContent = $( '#mpf-header-box' );
+  var adminHeaderBox = $( '#mpf-header-box' );
   // console.log( adminContent );
 
-  adminContent.click( function(){
+  adminHeaderBox.click( function(){
 
   	// alert('Whadap!');
   	$( this ).css('background-color', 'goldenrod');
+
+  });
+
+  var adminLoopBox = $( '#mpf-loop-box' );
+  // console.log( adminContent );
+
+  adminLoopBox.click( function(){
+
+  	// alert('Whadap!');
+  	$( this ).css('background-color', 'orangered');
 
   });
 	

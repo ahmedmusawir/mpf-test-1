@@ -9,9 +9,9 @@
 =       PUBLIC:  PLUGIN STYLES          =
 =======================================*/
 
-
-#mpf-header-box {
+#mpf-loop-box {
 	padding: 3rem 2rem;
+	margin-bottom: 3rem;
 	width: 100%;
 	background-color: darken(gray, 20%);
 	color: white !important;
@@ -22,6 +22,33 @@
 	h4 {
 		color: dodgerblue;
 	}
+}
+
+
+#mpf-header-box {
+	padding: 3rem 2rem;
+	// margin-bottom: 3rem;
+	width: 100%;
+	background-color: darken(gray, 20%);
+	color: white !important;
+
+	h3 {
+		color: white;
+	}
+	h4 {
+		color: dodgerblue;
+	}
+}
+
+.moose-read-more {
+	background-color: dodgerblue;
+	color: white;
+	padding: 1rem 2rem;
+	margin-top: 3rem;
+	// display: block;
+	clear: both;
+	float: right;
+	border-radius: 50px;
 }
 
 
